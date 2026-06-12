@@ -101,14 +101,14 @@ export function getStatusColor(status) {
 // Get avatar gradient based on name
 export function getAvatarGradient(name) {
   const gradients = [
-    'linear-gradient(135deg, #6c63ff, #8b83ff)',
-    'linear-gradient(135deg, #ff6b9d, #ff9100)',
-    'linear-gradient(135deg, #00d4ff, #6c63ff)',
-    'linear-gradient(135deg, #ffd700, #ff9100)',
-    'linear-gradient(135deg, #00e676, #00c853)',
-    'linear-gradient(135deg, #e91e63, #9c27b0)',
-    'linear-gradient(135deg, #ff9800, #f44336)',
-    'linear-gradient(135deg, #00bcd4, #009688)',
+    'linear-gradient(135deg, #7C6CFF, #9387FF)',
+    'linear-gradient(135deg, #EF4444, #F97316)',
+    'linear-gradient(135deg, #06B6D4, #7C6CFF)',
+    'linear-gradient(135deg, #D4AF37, #F97316)',
+    'linear-gradient(135deg, #22C55E, #16A34A)',
+    'linear-gradient(135deg, #EF4444, #7C6CFF)',
+    'linear-gradient(135deg, #F97316, #EF4444)',
+    'linear-gradient(135deg, #06B6D4, #22C55E)',
   ];
   if (!name) return gradients[0];
   const index = name.charCodeAt(0) % gradients.length;

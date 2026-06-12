@@ -6,7 +6,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { MdPeople, MdCalendarMonth, MdPayments, MdTrendingUp, MdAccessTime, MdAdd, MdArrowForward } from 'react-icons/md';
 import toast from 'react-hot-toast';
 
-const PIE_COLORS = ['#6c63ff', '#ff6b9d', '#00d4ff', '#ffd700', '#00e676', '#ff9100', '#e91e63', '#9c27b0', '#00bcd4', '#795548', '#8bc34a', '#3f51b5'];
+const PIE_COLORS = ['#7C6CFF', '#EF4444', '#06B6D4', '#D4AF37', '#22C55E', '#F97316', '#a78bfa', '#ec4899', '#14b8a6', '#f59e0b', '#84cc16', '#3b82f6'];
 
 export default function Dashboard() {
   const [stats, setStats] = useState(null);
@@ -131,23 +131,23 @@ export default function Dashboard() {
               <AreaChart data={revenueData}>
                 <defs>
                   <linearGradient id="revenueGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#6c63ff" stopOpacity={0.4} />
-                    <stop offset="100%" stopColor="#6c63ff" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#7C6CFF" stopOpacity={0.4} />
+                    <stop offset="100%" stopColor="#7C6CFF" stopOpacity={0} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(108,99,255,0.1)" />
-                <XAxis dataKey="name" tick={{ fill: '#6b6880', fontSize: 12 }} axisLine={false} tickLine={false} />
-                <YAxis tick={{ fill: '#6b6880', fontSize: 12 }} axisLine={false} tickLine={false} tickFormatter={(v) => `₹${v/1000}k`} />
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(124, 108, 255, 0.08)" />
+                <XAxis dataKey="name" tick={{ fill: '#626C8D', fontSize: 12 }} axisLine={false} tickLine={false} />
+                <YAxis tick={{ fill: '#626C8D', fontSize: 12 }} axisLine={false} tickLine={false} tickFormatter={(v) => `₹${v/1000}k`} />
                 <Tooltip
                   contentStyle={{
-                    background: '#111128',
-                    border: '1px solid rgba(108,99,255,0.2)',
-                    borderRadius: 12,
-                    color: '#e8e6f0'
+                    background: '#141B34',
+                    border: '1px solid #2B355A',
+                    borderRadius: 8,
+                    color: '#F5F7FA'
                   }}
                   formatter={(value) => [formatCurrency(value), 'Revenue']}
                 />
-                <Area type="monotone" dataKey="revenue" stroke="#6c63ff" strokeWidth={2} fill="url(#revenueGradient)" />
+                <Area type="monotone" dataKey="revenue" stroke="#7C6CFF" strokeWidth={2} fill="url(#revenueGradient)" />
               </AreaChart>
             </ResponsiveContainer>
           ) : (
@@ -180,10 +180,10 @@ export default function Dashboard() {
                   </Pie>
                   <Tooltip
                     contentStyle={{
-                      background: '#111128',
-                      border: '1px solid rgba(108,99,255,0.2)',
-                      borderRadius: 12,
-                      color: '#e8e6f0'
+                      background: '#141B34',
+                      border: '1px solid #2B355A',
+                      borderRadius: 8,
+                      color: '#F5F7FA'
                     }}
                     formatter={(value, name) => [`${value} clients`, name]}
                   />
