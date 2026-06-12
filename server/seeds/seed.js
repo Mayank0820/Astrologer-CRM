@@ -22,8 +22,8 @@ db.prepare(`
   VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 `).run(
   userId,
-  'Pandit Rajesh Sharma',
-  'rajesh@astrologercrm.com',
+  'demo user',
+  'demo@user.com',
   passwordHash,
   '+91 98765 43210',
   JSON.stringify(['Vedic Astrology', 'Numerology', 'Vastu Shastra', 'Palmistry', 'Gemstone Consultation']),
@@ -31,7 +31,7 @@ db.prepare(`
   'Experienced Vedic astrologer with 15+ years of practice. Specializing in Kundli reading, matchmaking, and career guidance through astrological insights.'
 );
 
-console.log('✅ Created demo astrologer: rajesh@astrologercrm.com / password123\n');
+console.log('✅ Created demo astrologer: demo@user.com / password123\n');
 
 // Create services
 const services = [
@@ -257,5 +257,5 @@ console.log(`✅ Created ${totalPayments} payment records\n`);
 
 console.log('🎉 Database seeded successfully!\n');
 console.log('Login credentials:');
-console.log('  Email: rajesh@astrologercrm.com');
+console.log('  Email: demo@user.com');
 console.log('  Password: password123\n');
