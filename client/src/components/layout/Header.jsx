@@ -14,7 +14,7 @@ export default function Header() {
 
   const getTitle = () => {
     if (location.pathname.startsWith('/clients/')) return 'Client Details';
-    return pageTitles[location.pathname] || 'Jyotish CRM';
+    return pageTitles[location.pathname] || 'Astrologer CRM';
   };
 
   return (

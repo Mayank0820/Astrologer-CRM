@@ -26,7 +26,7 @@ export default function Register() {
     setLoading(true);
     try {
       await register(formData);
-      toast.success('Account created! Welcome to Jyotish CRM 🔮');
+      toast.success('Account created! Welcome to Astrologer CRM 🔮');
       navigate('/');
     } catch (err) {
       toast.error(err.response?.data?.error || 'Registration failed');

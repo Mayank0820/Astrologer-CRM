@@ -40,7 +40,7 @@ export default function Login() {
               <MdAutoAwesome />
             </div>
             <h1 className="auth-title">Welcome Back</h1>
-            <p className="auth-subtitle">Sign in to your Jyotish CRM account</p>
+            <p className="auth-subtitle">Sign in to your Astrologer CRM account</p>
           </div>
 
           <form className="auth-form" onSubmit={handleSubmit}>

@@ -25,7 +25,7 @@ export default function Sidebar() {
           <MdAutoAwesome />
         </div>
         <div className="sidebar-brand">
-          <h2>Jyotish CRM</h2>
+          <h2>Astrologer CRM</h2>
           <span>Astrologer Management</span>
         </div>
       </div>

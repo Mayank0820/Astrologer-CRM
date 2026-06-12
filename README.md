@@ -1,4 +1,4 @@
-# 🔮 Jyotish CRM — Astrologer Management System
+# 🔮 Astrologer CRM — Astrologer Management System
 
 A full-stack CRM application built for astrologers to manage their practice — clients, consultations, birth charts, services, and payments.
 
