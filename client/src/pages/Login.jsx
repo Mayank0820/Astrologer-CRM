@@ -5,8 +5,8 @@ import { MdAutoAwesome, MdEmail, MdLock, MdVisibility, MdVisibilityOff } from 'r
 import toast from 'react-hot-toast';
 
 export default function Login() {
-  const [email, setEmail] = useState('rajesh@astrologercrm.com');
-  const [password, setPassword] = useState('password123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
@@ -103,9 +103,6 @@ export default function Login() {
           </div>
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: 24, color: 'var(--text-muted)', fontSize: 'var(--font-size-xs)' }}>
-          <p>Demo credentials: rajesh@astrologercrm.com / password123</p>
-        </div>
       </div>
     </div>
   );
